@@ -1,0 +1,30 @@
+id: understand-anything
+name: Understand Anything
+type: plugin
+category: engineering
+capabilities:
+- code-understanding
+- architecture-exploration
+- dependency-analysis
+- impact-analysis
+activation: contextual
+requires: []
+conflicts: []
+risk: medium
+upstream:
+  repo: https://github.com/Egonex-AI/Understand-Anything
+  license: MIT
+  ref: main
+  verified_on: 2026-09-15
+install:
+  kind: plugin-marketplace
+  command: /plugin marketplace add Egonex-AI/Understand-Anything && /plugin install
+    understand-anything
+  note: Claude Code marketplace path; the upstream project also provides platform-specific
+    installers for Codex, Pi, OpenCode, Gemini CLI, Copilot, and others.
+summary: Multi-agent codebase analysis that builds an interactive knowledge graph
+  and supports architecture, dependency, diff, and onboarding exploration.
+notes: Pointer only. Use for unfamiliar or large codebases; the initial analysis can
+  consume substantial model tokens.
+description: Multi-agent codebase analysis that builds an interactive knowledge graph
+  for architecture and dependency exploration.

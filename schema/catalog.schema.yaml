@@ -1,0 +1,19 @@
+# Schema notes for generated catalog.yaml.
+schema_version: {type: integer, required: true}
+skills:
+  type: list
+  item:
+    id: {type: string, required: true}
+    name: {type: string, required: true}
+    display_name: {type: string, required: false}
+    description: {type: string, required: true}
+    type: {type: string, required: true, enum: [skill, guidance, workflow, plugin]}
+    category: {type: string, required: true}
+    capabilities: {type: list<string>, required: true}
+    path: {type: string, required: true}
+    activation: {type: string, required: true, enum: [always, contextual, explicit, manual, dependency]}
+    requires: {type: list<string>, required: false}
+    conflicts: {type: list<string>, required: false}
+    risk: {type: string, required: true, enum: [low, medium, high]}
+    priority: {type: string, required: false}
+    source: {type: object, required: true}

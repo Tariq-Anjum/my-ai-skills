@@ -1,0 +1,28 @@
+id: caveman
+name: Caveman
+type: workflow
+category: productivity
+capabilities:
+- token-efficiency
+- concise-output
+- agent-installation
+activation: explicit
+requires: []
+conflicts: []
+risk: medium
+upstream:
+  repo: https://github.com/JuliusBrussee/caveman
+  license: MIT
+  ref: v2.6.0
+  verified_on: 2026-09-15
+install:
+  kind: skills-cli
+  command: npx skills add JuliusBrussee/caveman
+  note: Pointer only. The curated registry keeps its own terse-output skill; the upstream
+    project also ships plugins, hooks, a proxy CLI, and subagent presets.
+summary: Agent output-compression skill plus optional agent-specific integrations.
+notes: Keep the upstream installer separate from this registry's deterministic skill
+  installation. The upstream project currently provides a pinned v2.6.0 installer
+  and a broad agent matrix.
+description: Caveman's concise-output skill plus optional agent-specific plugins,
+  hooks, and proxy tooling.

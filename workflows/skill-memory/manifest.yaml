@@ -1,0 +1,28 @@
+id: skill-memory
+name: Skill Memory (Acontext)
+type: workflow
+category: memory
+capabilities:
+- agent-memory
+- skill-memory
+- self-learning
+activation: contextual
+requires: []
+conflicts: []
+risk: medium
+upstream:
+  repo: https://github.com/memodb-io/Acontext
+  license: Apache-2.0
+  ref: main
+  verified_on: 2026-09-15
+install:
+  kind: self-hosted
+  command: curl -fsSL https://install.acontext.io | sh
+  note: then create a server directory and run `acontext server up`; self-hosting
+    requires Docker and an OpenAI API key by default.
+summary: Open-source memory layer that stores learnings as editable Markdown skill
+  files and exposes progressive-disclosure skill tools.
+notes: Pointer only. Its memory model strongly informs this registry, but the service
+  is not required for local skill discovery.
+description: Acontext is an agent memory layer that stores learned knowledge as editable
+  Markdown skill files.

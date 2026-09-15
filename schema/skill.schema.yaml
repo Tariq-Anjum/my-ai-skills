@@ -1,0 +1,13 @@
+# Frontmatter for skills/<id>/SKILL.md and guidance/<id>/GUIDANCE.md.
+id: {type: string, required: true, pattern: "^[a-z0-9-]+$"}
+name: {type: string, required: true}
+description: {type: string, required: true, max_length: 1024}
+type: {type: string, required: true, enum: [skill, guidance]}
+category: {type: string, required: true}
+capabilities: {type: list<string>, required: true, min_items: 1}
+activation: {type: string, required: true, enum: [always, contextual, explicit, manual, dependency]}
+requires: {type: list<string>, required: false, default: []}
+conflicts: {type: list<string>, required: false, default: []}
+risk: {type: string, required: true, enum: [low, medium, high]}
+priority: {type: string, required: false, enum: [normal, foundational]}
+disable-model-invocation: {type: boolean, required: false}

@@ -1,0 +1,8 @@
+id: terse-output
+derived_from: "JuliusBrussee/caveman (skill half only \u2014 not the proxy/CLI)"
+license: verify at source
+maintainer: JuliusBrussee
+adaptation: independently written; inspired by upstream's approach, no text reused
+installed_at: '2026-09-15'
+last_verified: '2026-09-15'
+local_modified: false

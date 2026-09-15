@@ -1,0 +1,16 @@
+# Describes workflows/<id>/manifest.yaml and plugins/<id>/manifest.yaml —
+# pointers to external tools that are NOT absorbed into this repo.
+id: {type: string, required: true}
+name: {type: string, required: true}
+type: {type: string, required: true, enum: [workflow, plugin]}
+category: {type: string, required: true}
+capabilities: {type: list<string>, required: true}
+activation: {type: string, required: true, enum: [always, contextual, explicit, manual, dependency]}
+requires: {type: list<string>, required: false, default: []}
+conflicts: {type: list<string>, required: false, default: []}
+risk: {type: string, required: true, enum: [low, medium, high]}
+upstream: {type: object, required: true, fields: [repo, license]}
+install: {type: object, required: true, fields: [kind, command, note]}
+description: {type: string, required: true}
+summary: {type: string, required: true}
+notes: {type: string, required: false}

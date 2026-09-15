@@ -1,0 +1,29 @@
+id: openspec
+name: OpenSpec
+type: workflow
+category: engineering
+capabilities:
+- spec-driven-development
+- planning
+- change-management
+activation: contextual
+requires: []
+conflicts: []
+risk: low
+upstream:
+  repo: https://github.com/Fission-AI/OpenSpec
+  license: MIT
+  package: '@fission-ai/openspec'
+  verified_version: 1.13.0
+  verified_on: 2026-09-15
+install:
+  kind: npm
+  command: npm install -g @fission-ai/openspec@latest
+  note: requires Node.js 20.19.0+; run `openspec init` per project and `openspec update`
+    after upgrading.
+summary: Spec-driven development workflow that keeps requirements and implementation
+  plans reviewable before code.
+notes: Pointer only. The registry does not absorb OpenSpec's CLI, schemas, generated
+  commands, or project-local files.
+description: Spec-driven development workflow that keeps requirements and implementation
+  plans reviewable before code.

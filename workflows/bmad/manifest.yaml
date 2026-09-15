@@ -1,0 +1,29 @@
+id: bmad
+name: BMAD Method
+type: workflow
+category: engineering
+capabilities:
+- agile-development
+- multi-perspective-planning
+- requirements
+- architecture
+activation: contextual
+requires: []
+conflicts: []
+risk: low
+upstream:
+  repo: https://github.com/bmad-code-org/BMAD-METHOD
+  license: MIT
+  ref: main
+  verified_on: 2026-09-15
+install:
+  kind: skills-cli
+  command: npx skills add bmad-code-org/BMAD-METHOD
+  note: select the `bmad` setup skill and desired delivery/toolbox skills; alternatively
+    use the project's Claude Code/Codex plugin marketplace routes.
+summary: Right-sized agile AI development method for clarifying, planning, building,
+  verifying, and learning.
+notes: Pointer only. Do not install every BMad component into every agent context;
+  activate its workflows per project and need.
+description: Right-sized agile AI development method spanning clarification, planning,
+  build, verification, and learning.

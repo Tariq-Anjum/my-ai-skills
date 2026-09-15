@@ -1,0 +1,11 @@
+# Describes skills/<id>/source.yaml and guidance/<id>/source.yaml —
+# provenance for anything independently authored but inspired by an
+# upstream project.
+id: {type: string, required: true}
+derived_from: {type: string, required: true}
+license: {type: string, required: true}
+maintainer: {type: string, required: true}
+adaptation: {type: string, required: true}
+installed_at: {type: date, required: true}
+last_verified: {type: date, required: true}
+local_modified: {type: bool, required: true}

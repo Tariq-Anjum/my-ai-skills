@@ -1,0 +1,9 @@
+id: context-fundamentals
+derived_from: muratcankoylan/Agent-Skills-for-Context-Engineering (condensed, own
+  summary)
+license: verify at source
+maintainer: muratcankoylan
+adaptation: independently written; inspired by upstream's approach, no text reused
+installed_at: '2026-09-15'
+last_verified: '2026-09-15'
+local_modified: false

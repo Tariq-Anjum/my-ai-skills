@@ -1,0 +1,8 @@
+id: session-reconcile
+derived_from: KKKKhazix/khazix-skills (concept of neat-freak, not its text)
+license: verify at source
+maintainer: KKKKhazix
+adaptation: independently written; inspired by upstream's approach, no text reused
+installed_at: '2026-09-15'
+last_verified: '2026-09-15'
+local_modified: false
