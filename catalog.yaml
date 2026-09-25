@@ -111,6 +111,34 @@ skills:
     installed_at: '2026-09-15'
     last_verified: '2026-09-15'
     local_modified: false
+- id: final-audit
+  name: final-audit
+  display_name: Final Audit
+  description: Independently audit completed implementation work before acceptance
+    when another agent, developer, or prior pass claims the task is finished, production-ready,
+    safe, or ready to merge.
+  type: skill
+  category: engineering
+  capabilities:
+  - code-review
+  - implementation-audit
+  - production-readiness
+  - verification
+  path: skills/final-audit/SKILL.md
+  activation: contextual
+  requires: []
+  conflicts: []
+  risk: low
+  disable-model-invocation: false
+  source:
+    id: final-audit
+    derived_from: ZHOOR AI skills registry design
+    license: MIT
+    maintainer: Tariq
+    adaptation: original independent implementation-audit workflow
+    installed_at: 2026-09-25
+    last_verified: 2026-09-25
+    local_modified: false
 - id: grill-me
   name: grill-me
   display_name: Grill Me
@@ -238,6 +266,33 @@ skills:
   notes: Pointer only. The registry does not absorb OpenSpec's CLI, schemas, generated
     commands, or project-local files.
   source: *id003
+- id: research-first
+  name: research-first
+  display_name: Research First
+  description: Research current or uncertain external technical facts before deciding
+    when freshness, versions, evidence, or real-world experience could materially
+    change the answer.
+  type: skill
+  category: research
+  capabilities:
+  - technical-research
+  - source-verification
+  - current-information
+  path: skills/research-first/SKILL.md
+  activation: contextual
+  requires: []
+  conflicts: []
+  risk: low
+  disable-model-invocation: false
+  source:
+    id: research-first
+    derived_from: ZHOOR AI skills registry design and OpenAI Agent Skills guidance
+    license: MIT
+    maintainer: Tariq
+    adaptation: original current-evidence technical research workflow
+    installed_at: 2026-09-25
+    last_verified: 2026-09-25
+    local_modified: false
 - id: session-reconcile
   name: session-reconcile
   display_name: Session Reconcile
@@ -303,8 +358,9 @@ skills:
   - context-management
   - progressive-disclosure
   path: skills/skill-router/SKILL.md
-  activation: contextual
+  activation: always
   risk: low
+  priority: foundational
   disable-model-invocation: false
   source:
     id: skill-router

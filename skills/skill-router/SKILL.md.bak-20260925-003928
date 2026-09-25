@@ -8,8 +8,7 @@ capabilities:
   - capability-routing
   - context-management
   - progressive-disclosure
-activation: always
-priority: foundational
+activation: contextual
 risk: low
 disable-model-invocation: false
 ---

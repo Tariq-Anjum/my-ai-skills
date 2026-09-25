@@ -21,6 +21,7 @@ Do not load every asset.
 - **Meta** → `categories/meta.md`
 - **Planning** → `categories/planning.md`
 - **Productivity** → `categories/productivity.md`
+- **Research** → `categories/research.md`
 
 ## Capability layer
 
