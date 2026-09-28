@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
-import sys, os, re, yaml
+import sys, os, re
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _bootstrap import ensure_yaml
+
+ensure_yaml()
+
+import yaml
 
 ROOT=Path(__file__).resolve().parents[1]
 CAT=ROOT/"catalog.yaml"

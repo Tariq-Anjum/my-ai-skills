@@ -22,7 +22,7 @@ For non-trivial work:
 2. Open only the category that matches the task.
 3. Load only the smallest relevant skill set.
 4. Never recursively search the entire `my-ai-skills` repository just to discover capabilities.
-5. For `guidance`, `workflow`, or `plugin` decisions, read `$AI_TOOLS_ROOT/capabilities.md`.
+5. For `guidance`, `workflow`, or `plugin` decisions, read `$AI_SKILLS_ROOT/capabilities.md`.
 6. For coding, implementation, debugging, or code-review work, check `$AI_TOOLS_ROOT/guidance/INDEX.md` and load only matching guidance.
 7. Check `requires` and `conflicts` before composing skills.
 8. For external workflows/plugins, use their exact manifest and `command -v`/equivalent to determine runtime availability.
